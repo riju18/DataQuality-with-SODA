@@ -1,0 +1,13 @@
+data_source my_postgres_source:
+  type: postgres
+  host: localhost
+  port: "5432"
+  username: postgres
+  password: postgres
+  database: dvdrental
+  schema: public
+
+soda_cloud:
+   host: cloud.us.soda.io
+   api_key_id: ad16c3e0-ea78-4cc3-8ba9-2490ebc10
+   api_key_secret: oJEreCPi1AHA_CHO_20XVeeWiQfMLz0IOdbncpgRUyFSLWmx
