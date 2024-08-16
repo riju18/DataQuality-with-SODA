@@ -1,0 +1,33 @@
+checks for facebook_campaign:
+  
+  # numeric
+  - row_count > 0
+  - avg(link_clicks) >= 5.0:
+      name: good campaign (>= 5 clicks)
+  - max(link_clicks) <= 200.0
+  - min(link_clicks) >= 0.0
+  - min_length(account_id) >= 10
+  - max_length(account_id) <= 50
+
+  # missing
+  - missing_count(ad_id) = 0
+  - missing_count(campaign_id) = 0:
+      missing values: [n/a, NA, none]
+  - missing_count(account_id) = 0:
+      missing values: [n/a, NA, none]
+  - missing_count(campaign) = 0:
+      missing values: [n/a, NA, none]
+  
+  # validity
+  - invalid_count(campaign_start_time) > 0:
+      valid format: date iso 8601
+  - invalid_count(campaign_stop_time) > 0:
+      valid format: date iso 8601
+  - invalid_count(row_id) = 0:
+      valid format: uuid
+  
+  # freshness
+  - freshness(date) <= 90d:
+      name: Data is fresh (<=90d)
+      warn: when > 60d
+      fail: when > 120d
