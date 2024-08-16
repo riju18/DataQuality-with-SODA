@@ -1,11 +1,11 @@
-# Validate Data Quality in BigQuery Using SODA
+# Validate Data Quality in BigQuery Using SODA 🥤
 
 + [Prerequisite](#prerequisite)
 + [Installation](#installation)
 + [Run](#how-to-run)
 + [DOC](#doc)
 
-# prerequisite
+# prerequisite 🔑
 + Create and activate Python venv
     ```sh
     python3 -m venv venv_name
@@ -13,7 +13,7 @@
     ```
 + clone the repo and navigate to the repo
 
-# installation
+# installation ⚙️
 ```sh
 pip install -r requirements.txt
 ```
@@ -26,7 +26,7 @@ pip install -r requirements.txt
     pip install -i https://pypi.cloud.soda.io soda-bigquery
     ```
 
-# how-to-run
+# how-to-run 🚀
 
 + create an account in [**soda_cloud**](https://cloud.soda.io/) and 
 create an API from profile section
@@ -48,9 +48,9 @@ create an API from profile section
         soda scan -d my_bigquery_source -c configuration.yml checks.yml 
         ```
 + Go to your soda cloud profile and check the dashboard
-+ DONE
++ DONE 🎯
 
-# doc
+# doc 📚
 + [Quick Start](https://docs.soda.io/soda-library/install.html)
 + [SodaCL reference](https://docs.soda.io/soda-cl/metrics-and-checks.html)
 + [Datasource](https://docs.soda.io/soda/connect-athena.html)
