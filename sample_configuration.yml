@@ -1,0 +1,27 @@
+data_source my_bigquery_source:
+  type: bigquery
+  account_info_json: '{
+      "type": "service_account",
+      "project_id": "dummy_project",
+      "private_key_id": "a70c7c987a94961deea70e6ccf6131d37e",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXDYJ8zMeloKBD\na1k/+9IEs6IuPCoSv\npGiUeTF0TadVT+yQ04iCq9C45/7apN6pNvfpCOTqJ3svV/ZCYNlIPN4tSFIJnKE/\nE+Ga5N46rvJtc6xWdkrQKR16Pkeud5gcB+Hq+ler23Tbjp5Zt89ERKyZvActIluo\n0QX0VSWHf9tu7pLjcBrsdlXpcwKBgQDdPRgPigPYnoR37LhLgQG3kE3RsJjMMWQZ\nM2aiZ/pJQIiOAAypQAlBgr7L6IaiJEJXbqZ8rUNihJsHrWL7/6qSNCDBAHcGMajZ\nd+zXZb9qqwSD+c96dSHh+VbqcPZ6dlABIQDQeBL8wia2Rqlt4b02502kcsmZvP3q\nxg57X4LH3wKBgHj3vlrQ25bsOSPBNj14TAqZW8wxD75uSw8gdgUn5yBsTz0U1tUl\nzqBvXXDi3oRmW2VrVVVDmbIjrRXVGaHjVVIKHmoir+E7UTT67mWBBz5s1kXfB4fg\n4RdsuX/nAEjXbO0qaMzEIa/ecxKi2DIZ4q4jUkorgo3L1oZP8havdBY3AoGBAMeW\nHQWvucaLQvA5kw0yhc0HFt0r1ryndikx8M5kxSueV1LbgpCRn4gFHoEv9X2C/oKH\n5RQm7tqKzJ1Bc0HppQSemEnlVHs3A5+ki/rJ5MSjIcC59c4Aq5+D5EA9xm42G/jY\nwDZRjLePo4Le/myNsLg+NRI9J9hU4jERmfD8+iu7AoGBAKCq9nZYRLxdgOmOGfsQ\n+guJG+GovZzJ+FWdQJRsYw6eVwlIP1FOwkWWyqVfZLgzsbMKW1uHCpzbc+T+uYMU\nB6dbuEMvDQxI7+4uZPef0btfjlfvyFkUFJJbdNBD2ygYMBuZiQtySKM654sKzd4i\ncTYXmziJ+IOFv80SgVCz93UV\n-----END PRIVATE KEY-----\n",
+      "client_email": "deummy@dumy.iam.gserviceaccount.com",
+      "client_id": "1039348953539925",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dummy-513%40dumy-training.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }'
+  auth_scopes:
+  - https://www.googleapis.com/auth/bigquery
+  - https://www.googleapis.com/auth/cloud-platform
+  - https://www.googleapis.com/auth/drive
+  project_id: "dummy_project"
+  dataset: campaign
+
+soda_cloud:
+   host: cloud.us.soda.io
+   api_key_id: ad16c3e0-ea78-4cc3-8ba9-2490ebc10e
+   api_key_secret: oJEreCPi1AHA_CHO_20XVeeWiQfMLz0IOdbncpgRUyFSLWmxnK
+
