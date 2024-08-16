@@ -1,4 +1,4 @@
-checks for facebook_campaign:
+checks for facebook_campaign:  # dataset_name
   
   # numeric
   - row_count > 0
@@ -20,7 +20,7 @@ checks for facebook_campaign:
   
   # validity
   - invalid_count(campaign_start_time) > 0:
-      valid format: date iso 8601
+      valid format: date iso 8601  # data type
   - invalid_count(campaign_stop_time) > 0:
       valid format: date iso 8601
   - invalid_count(row_id) = 0:
